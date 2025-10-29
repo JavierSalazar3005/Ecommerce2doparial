@@ -1,6 +1,36 @@
-namespace Ecommerce2doparial.DTOs;
+using System.ComponentModel.DataAnnotations;
+using Ecommerce2doparial.Models;
+
+namespace Ecommerce2doparial.DTOs
 
 {
+    namespace Ecommerce2doparial.DTOs
+    {
+        public class CreateOrderBatchDto
+        {
+            public List<CreateOrderDto> Orders { get; set; } = new();
+        }
+
+        public class CreateOrderBatchResponseDto
+        {
+            public Guid CheckoutGroupId { get; set; }
+            public List<OrderResponseDto> Orders { get; set; } = new();
+        }
+    }
+    
+    // Para crear varios pedidos en un solo request
+    public class CreateOrderBatchDto
+    {
+        public List<CreateOrderDto> Orders { get; set; } = new();
+    }
+
+// Respuesta del batch: todos los pedidos + un ID de grupo
+    public class CreateOrderBatchResponseDto
+    {
+        public Guid CheckoutGroupId { get; set; }
+        public List<OrderResponseDto> Orders { get; set; } = new();
+    }
+
     public class CreateOrderItemDto
     {
         [Required] public int ProductId { get; set; }

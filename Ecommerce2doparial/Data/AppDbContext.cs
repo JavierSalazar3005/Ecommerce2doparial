@@ -1,4 +1,7 @@
-namespace Ecommerce2doparial.Data;
+using Ecommerce2doparial.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace Ecommerce2doparial.Data
 
 {
     public class AppDbContext : DbContext

@@ -1,4 +1,12 @@
-namespace Ecommerce2doparial.Controllers;
+using System.Security.Claims;
+using Ecommerce2doparial.Data;
+using Ecommerce2doparial.DTOs;
+using Ecommerce2doparial.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Ecommerce2doparial.Controllers
 
 {
     [ApiController]

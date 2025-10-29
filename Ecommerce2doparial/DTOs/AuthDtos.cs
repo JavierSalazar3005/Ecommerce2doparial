@@ -1,4 +1,7 @@
-namespace Ecommerce2doparial.DTOs;
+using System.ComponentModel.DataAnnotations;
+using Ecommerce2doparial.Models;
+
+namespace Ecommerce2doparial.DTOs
 
 {
     public class RegisterDto

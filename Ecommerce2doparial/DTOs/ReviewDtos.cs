@@ -1,4 +1,6 @@
-namespace Ecommerce2doparial.DTOs;
+using System.ComponentModel.DataAnnotations;
+
+namespace Ecommerce2doparial.DTOs
 
 {
     public class CreateReviewDto
